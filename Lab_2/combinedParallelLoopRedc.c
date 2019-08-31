@@ -7,6 +7,7 @@ int main (int argc, char *argv[])
     float a[100], b[100], sum;
     /* Some initializations */
     n = 100;
+    omp_set_num_threads(4);
     for (i=0; i < n; i++)
     a[i] = b[i] = i * 1.0;
     sum = 0.0;

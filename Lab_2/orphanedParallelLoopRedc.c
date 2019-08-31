@@ -21,6 +21,7 @@ int main (int argc, char *argv[]) {
         a[i] = b[i] = 1.0 * i;
     }
     sum = 0.0;
+    omp_set_num_threads(4);
     #pragma omp parallel
     dotprod();
     printf("Sum = %f\n",sum);
