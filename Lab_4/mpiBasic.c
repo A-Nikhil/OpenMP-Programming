@@ -6,8 +6,7 @@ int main(int argc, char ** argv) {
     char name[80];
     int length;
 
-    MPI_Init(&argc, &argv); // note that argc and argv are passed
-                            // by address
+    MPI_Init(&argc, &argv); // note that argc and argv are passed by address
 
     MPI_Comm_rank(MPI_COMM_WORLD,&rank);
     MPI_Comm_size(MPI_COMM_WORLD,&size);
