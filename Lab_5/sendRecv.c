@@ -1,14 +1,15 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <mpi.h>
-#include <math.h>
- 
 /*
 * Running the code
 mpicc sendRecv.c
 mpiexec -n 2 ./a.out
 */
 
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <mpi.h>
+#include <math.h>
+ 
 
 int main(int argc,char **argv) {
   int myid, numprocs;
